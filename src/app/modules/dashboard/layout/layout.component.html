@@ -1,7 +1,13 @@
-<div class="layout">
-    <prexie-menu></prexie-menu>
+<div class="layout py-3 vh-100">
+    <div class="container-fluid h-100">
+        <div class="d-flex gap-3 h-100">
+            <prexie-menu></prexie-menu>
 
-    <main class="main">
-        <router-outlet></router-outlet>
-    </main>
+            <main class="main flex-grow-1">
+                <router-outlet></router-outlet>
+            </main>
+
+        </div>
+    
+    </div>
 </div>

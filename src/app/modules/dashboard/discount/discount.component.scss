@@ -1,0 +1,17 @@
+:host {
+    ::ng-deep {
+        .nav-link {
+            padding: 0;
+            color: var(--bs-gray-500);
+            &.active {
+                color: var(--bs-primary);
+                border-bottom: 2px solid var(--bs-primary);
+            }
+        }
+    }
+    .search-icon {
+        position: absolute;
+        top: 4px;
+        right: 10px;
+    }
+}
