@@ -1,0 +1,22 @@
+:host {
+    .table {
+        tbody {
+            tr {
+                td {
+                    &:first-of-type {
+                        span {
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                        }
+                    }
+                    &:last-of-type {
+                        span {
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,19 +1,19 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col" class="border-0">Name</th>
-        <th scope="col" class="border-0">ID</th>
-        <th scope="col" class="border-0">Type</th>
-        <th scope="col" class="border-0">Start time</th>
-        <th scope="col" class="border-0">End time</th>
-        <th scope="col" class="border-0">Discount</th>
-        <th scope="col" class="border-0">After tax</th>
+        <th scope="col" class="border-0 text-muted fw-normal">Name</th>
+        <th scope="col" class="border-0 text-muted fw-normal">ID</th>
+        <th scope="col" class="border-0 text-muted fw-normal">Type</th>
+        <th scope="col" class="border-0 text-muted fw-normal">Start time</th>
+        <th scope="col" class="border-0 text-muted fw-normal">End time</th>
+        <th scope="col" class="border-0 text-muted fw-normal">Discount</th>
+        <th scope="col" class="border-0 text-muted fw-normal">After tax</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let table of tables">
         <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
+            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0">Mark</span>
         </td>
         <td class="border-0 p-0">
             <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
@@ -31,145 +31,7 @@
             <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
         </td>
         <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 rounded-start">Mark</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-end-0 border-start-0">Otto</span>
-        </td>
-        <td class="border-0 p-0">
-            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0 rounded-end">Otto</span>
+            <span class="border border-1 px-2 py-3 my-1 d-flex border-start-0">Otto</span>
         </td>
       </tr>
     </tbody>
