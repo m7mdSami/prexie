@@ -1,0 +1,126 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "prexie",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "prexie",
+            "style": "kebab-case"
+          }
+        ],
+        "operator-linebreak": ["error", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
+        "func-names": "off",
+        "no-param-reassign": "off",
+        "default-case": "off",
+        "comma-dangle": ["error", "always-multiline"],
+        "consistent-return": "off",
+        "new-cap": "off",
+        "no-underscore-dangle": "off",
+        "no-use-before-define": "off",
+        "no-new": "off",
+        "no-undef": "off",
+        "global-require": "off",
+        "no-control-regex": "off",
+        "wrap-iife": ["error", "outside"],
+        "no-mixed-operators": 0,
+        "no-bitwise": 0,
+        "no-restricted-globals": 0,
+        "class-methods-use-this": 0,
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "nonblock-statement-body-position": ["error", "below"],
+        "no-var": ["error"],
+        "no-useless-constructor": ["off"],
+        "@typescript-eslint/no-useless-constructor": ["error"],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["error"],
+        "no-trailing-spaces": "error",
+        "no-eval": ["error"],
+        "@typescript-eslint/no-empty-interface": "error",
+        "no-empty": ["error", { "allowEmptyCatch": true }],
+        "constructor-super": "error",
+        "indent": ["error", 2, { "VariableDeclarator": "first", "MemberExpression": 1, "ArrayExpression": 1, "ObjectExpression": 1, "ImportDeclaration": 1 }],
+        "comma-style": ["error", "last"],
+        "no-irregular-whitespace": [
+          "error",
+          {
+            "skipTemplates": true,
+            "skipRegExps": true,
+            "skipComments": true
+          }
+        ],
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "no-whitespace-before-property": "error",
+        "array-bracket-newline": ["error", { "multiline": true }],
+        "array-bracket-spacing": [
+          "error",
+          "always",
+          {
+            "objectsInArrays": false,
+            "singleValue": false,
+            "arraysInArrays": false
+          }
+        ],
+        "array-element-newline": ["error", "always"],
+        "arrow-parens": ["error", "always"],
+        "arrow-spacing": "error",
+        "block-spacing": "error",
+        "brace-style": "error",
+        "computed-property-spacing": ["error", "always"],
+        "eol-last": ["error", "always"],
+        "func-call-spacing": ["error", "never"],
+        "function-call-argument-newline": ["error", "never"],
+        "implicit-arrow-linebreak": ["error", "beside"],
+        "key-spacing": ["error", { "beforeColon": false }],
+        "lines-between-class-members": ["error", "always"],
+        "multiline-ternary": ["error", "always-multiline"],
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+        "no-multi-spaces": "error",
+        "no-multiple-empty-lines": "error",
+        "object-property-newline": "error",
+        "padded-blocks": ["error", "never"],
+        "padding-line-between-statements": [
+          "error",
+          { "blankLine": "always", "prev": ["case", "default"], "next": "*" },
+          { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+          { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] }
+        ],
+        "rest-spread-spacing": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+        "linebreak-style": ["error", "windows"]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
